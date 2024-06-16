@@ -294,7 +294,7 @@ a {
 
 b {
     color: #000b;
-    font-size: clamp(14px, 1.8vw, 18px)
+    font-size: clamp(14px, 1.7vw, 18px)
 }
 
 p {
