@@ -34,6 +34,6 @@ document.querySelector('#arrow svg').addEventListener('click', () => {
 // random bg
 var images = ['/bg1.jpg',  '/bg2.webp', '/bg3.jpg', '/bg4.jpg', '/bg5.jpg', '/bg6.jpg', '/bg7.jpg', '/bg8.jpg'];
 
-var randomImage = Math.floor(Math.random() * 6);
+var randomImage = Math.floor(Math.random() * images.length);
 
-document.querySelector(':root').style.setProperty("--background", "image-set(url('/backgrounds" + images[randomImage] + "') type('image/webp'))");
+document.querySelector(':root').style.setProperty("--background", "image-set(url('/backgrounds" + images[randomImage] + "') type('image'))");
