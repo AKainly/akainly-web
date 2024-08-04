@@ -36,4 +36,4 @@ var images = ['/bg1.jpg',  '/bg2.jpg', '/bg3.jpg', '/bg4.jpg', '/bg5.jpg', '/bg6
 
 var randomImage = Math.floor(Math.random() * images.length);
 
-document.querySelector(':root').style.setProperty("--background", "image-set(url('/backgrounds" + images[randomImage] + "') type('image'))");
+document.querySelector(':root').style.setProperty("--background", "image-set(url('/backgrounds" + images[randomImage] + "'))");
