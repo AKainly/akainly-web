@@ -32,7 +32,7 @@ document.querySelector('#arrow svg').addEventListener('click', () => {
 });
 
 // random bg
-var images = ['/bg1.jpg',  '/bg2.jpg', '/bg3.jpg', '/bg4.jpg', '/bg5.jpg', '/bg6.jpg', '/bg7.jpg', '/bg8.jpg'];
+var images = ['/bg1.jpg',  '/bg2.jpg', '/bg3.jpg', '/bg4.jpg', '/bg5.jpg', '/bg6.jpg', '/bg7.jpg'];
 
 var randomImage = Math.floor(Math.random() * images.length);
 

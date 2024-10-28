@@ -189,7 +189,7 @@ main {
     grid-column: span var(--c);
     transition: transform .2s linear, background-color .2s linear;
     border-radius: 24px;
-    background-color: #defa;
+    background-color: #ffffff88;
     height: calc(var(--square-size) * var(--r) + var(--gap) * (var(--r) - 1));
     overflow: hidden;
     color: #000;
@@ -208,7 +208,7 @@ main {
 }
 
 .widget:hover {
-    background-color: #defc;
+    background-color: rgba(255, 99, 99, 0.371);
 }
 
 .widget:active {
