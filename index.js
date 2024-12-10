@@ -1,7 +1,3 @@
-// bg behavior
-(window.setScroll = () => document.body.style.setProperty('--scroll', scrollY / innerHeight))();
-['scroll', 'resize'].forEach(e => addEventListener(e, setScroll));
-
 const bg = document.querySelector('#bg');
 
 addEventListener('touchstart', () => bg.style.setProperty('--multiplier', '0'));
@@ -16,23 +12,8 @@ addEventListener('mousemove', ({ clientX, clientY }) => {
     setTimeout(() => bg.style.transition = '', 100);
 }));
 
-// scroll arrow
-document.querySelector('#arrow svg').addEventListener('click', () => {
-    const start = performance.now();
-
-    !function step() {
-        const progress = (performance.now() - start) / 200;
-        scrollTo({ top: (innerWidth > 780 ? .3 : .8) * innerHeight * easeOutCubic(progress) });
-        if (progress < 1) requestAnimationFrame(step);
-    }();
-
-    function easeOutCubic(x) {
-        return 1 - Math.pow(1 - x, 3);
-    }
-});
-
 // random bg
-var images = ['/bg1.jpg',  '/bg2.jpg', '/bg3.jpg', '/bg4.jpg', '/bg5.jpg', '/bg6.jpg', '/bg7.jpg'];
+var images = ['/bg1.jpg',  '/bg2.jpg', '/bg3.jpg', '/bg4.jpg', '/bg5.jpg'];
 
 var randomImage = Math.floor(Math.random() * images.length);
 
