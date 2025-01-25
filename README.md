@@ -1,1 +1,1 @@
-## AKainly | Profile website/Link hub (pwlh)
+## akainly | Profile website/Link hub (pwlh)
